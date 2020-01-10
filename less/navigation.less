@@ -1,1 +1,35 @@
 // Navigation Styles here
+ .navbar{
+    .display-flex(space-between, center);
+    .center();
+  
+nav {
+    .display-flex(space-around, center);
+    margin: 3%;
+    width:60%;
+   @media @mobile{
+ &{
+     .mobile(column,center, center)
+ }
+   }
+   @media @tablet{
+    &{
+        .tablet(space-around, center)
+    }
+      }
+   
+   
+ a {
+.clickablenav(black);
+ margin: 2%;
+
+ font-size: 1.9rem;
+ text-decoration: none;
+ font-weight: bold;
+ 
+ }  
+ }
+}
+
+ 
+ 
