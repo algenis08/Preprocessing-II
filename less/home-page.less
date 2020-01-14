@@ -28,12 +28,16 @@ header{
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile{
+        width: 100%;}
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
-
+      @media @mobile{
+        
+        width: 85%;}
       img {
         border-radius: 10px;
       }
@@ -56,6 +60,10 @@ header{
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      @media @mobile{
+        
+        width: 100%;
+      }
     }
 
     .img-content {
@@ -92,6 +100,9 @@ header{
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile{
+        
+        width: 100%;}
       .btn{
         .display-flex(center, center);
         .clickablebtn(white,); 
