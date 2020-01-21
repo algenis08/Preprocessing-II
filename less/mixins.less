@@ -1,1 +1,40 @@
 // Mixins in here
+.display-flex (@justify, @align){
+    display:flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+.center(){
+    max-width: 800px;
+    margin: 0 auto;
+    border-bottom: 2px dashed @navigation-border;
+}
+// media query 
+ .mobile(@fd,@j,@a){
+    display:flex;
+    flex-direction: @fd;
+    justify-content: @j;
+    align-items: @a;
+}
+.tablet(@j,@a){
+    display:flex;
+    
+    justify-content: @j;
+    align-items: @a;
+}
+
+.clickablenav(@c) {
+    color: @c;
+    
+    &:hover {
+      color: lighten(@c, 50%);
+    }
+  }
+  .clickablebtn(@c) {
+    color: @c;
+    
+    &:hover {
+      color: darken(@c, 20%);
+    }
+  }
+  
